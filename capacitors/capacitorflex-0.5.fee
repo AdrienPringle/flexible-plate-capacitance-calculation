@@ -1,0 +1,87 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[DoSmartMesh] =  1
+[Depth]       =  30
+[LengthUnits] =  centimeters
+[ProblemType] =  axisymmetric
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 1
+  <BeginBdry>
+    <BdryName> = "Fixed Voltage"
+    <BdryType> = 0
+    <Vs> = 0.5
+    <qs> = 0
+    <c0> = 0
+    <c1> = 0
+  <EndBdry>
+[BlockProps]  = 2
+  <BeginBlock>
+    <BlockName> = "air"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "dielectric"
+    <ex> = 3
+    <ey> = 3
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "anode"
+    <Vc> = 1
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "cathode"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 17
+0	-0.45000000000000001	0	0	0
+18	-0.45000000000000001	0	0	0
+18	-0.5	0	0	0
+0	-0.5	0	0	0
+0	-0.22500000000000001	0	0	0
+1.8	-0.22131711969377985	0	0	0
+3.6000000000000001	-0.2104850888524438	0	0	0
+5.4000000000000004	-0.19313858055018149	0	0	0
+7.2000000000000002	-0.17028601394414783	0	0	0
+9	-0.14323944878270581	0	0	0
+10.800000000000001	-0.11352400929609856	0	0	0
+12.6	-0.082773677378649199	0	0	0
+14.4	-0.052621272213110956	0	0	0
+16.199999999999999	-0.024590791077086654	0	0	0
+18	-8.7708866231685953e-018	0	0	0
+0	-90	0	0	0
+0	90	0	0	0
+[NumSegments] = 17
+0	1	-1	0	0	0	0
+1	2	-1	0	0	0	0
+2	3	0.25	0	0	0	2
+3	0	-1	0	0	0	0
+4	5	0.25	0	0	0	1
+5	6	0.25	0	0	0	1
+6	7	0.25	0	0	0	1
+7	8	0.25	0	0	0	1
+8	9	0.25	0	0	0	1
+9	10	0.25	0	0	0	1
+10	11	0.25	0	0	0	1
+11	12	0.25	0	0	0	1
+12	13	0.25	0	0	0	1
+13	14	-1	0	0	0	0
+15	3	-1	0	0	0	0
+0	4	-1	0	0	0	0
+4	16	-1	0	0	0	0
+[NumArcSegments] = 1
+15	16	180	2.5	1	0	0	0	1
+[NumHoles] = 0
+[NumBlockLabels] = 2
+10	10	1	1	0	0
+9	-0.47499999999999998	2	1	0	0
