@@ -3,6 +3,11 @@ import math
 import matplotlib
 import matplotlib.pyplot as plt
 
+#######################################################################
+# Large parts of this code are adapted from David Meeker's example code
+# available at femm.info/wiki/pyFEMM
+#######################################################################
+
 # data setup
 
 #number of trials from 0 - 1 flexpercent (total number will be *2 - 1 to account for both sides)
